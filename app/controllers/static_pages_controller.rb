@@ -7,4 +7,7 @@ class StaticPagesController < ApplicationController
 
   def education
   end
+
+  def contact
+  end
 end
