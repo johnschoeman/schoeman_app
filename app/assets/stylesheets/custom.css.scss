@@ -1,0 +1,135 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+/* mixins, variables, etc. */
+
+$gray-medium-light: #eaeaea;
+$blue-medium: #2070cc;
+
+
+/* universal */
+
+body {
+  padding-top: 60px;
+  margin-top: 20px;
+}
+
+section {
+  overflow: auto;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.center {
+  text-align: center;
+  h1 {
+    margin-bottom: 10px;
+  }
+}
+
+.left {
+  text-align: left;
+  h1 {
+    margin-bottom: 10px;
+  }
+}
+
+/* typography */
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1;
+  font-family: 'Century Gothic' sans-serif;
+}
+
+h1 {
+  font-size: 2em;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+h2 {
+  font-size: 1.2em;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+  text-align: left;
+  font-weight: normal;
+  color: gray;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.7em;
+  color: gray;
+}
+
+/* header */
+header {
+  font-family: 'Century Gothic' sans-serif;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+  color: $blue-medium;
+}
+
+header a {
+  color: $blue-medium;
+  &:hover{
+    color: $blue-medium;
+    decoration: underline;
+    background-color: $blue-medium;
+    border: 2px solid $blue-medium;
+    border-radius: 10px 10px 1px 1px;
+  }
+}
+
+#logo {
+  float: left;
+  margin-right: 10px;
+  font-size: 2.3em;
+  color: $blue-medium;
+  text-transform: capitalize;;
+  letter-spacing: -1px;
+  padding: 15px 4px;
+  font-weight: medium;
+  &:hover {
+    color: white;
+    text-decoration: none;
+    background-color: $blue-medium;
+    border: 2px solid $blue-medium;
+    border-radius: 10px 10px 2px 2px;
+  }
+}
+
+/* footer */
+
+footer {
+  font-family: 'Century Gothic' sans-serif;
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid $blue-medium;
+  color: $blue-medium;
+  a {
+    color: $blue-medium;
+    &:hover{
+      color: $blue-medium;
+      decoration: underline;
+      background-color: #fff;
+    }
+  }
+  small {
+    float: left;
+  }
+  ul {
+    float: right;
+    list-style: none;
+    li {
+      float: left;
+      margin-left: 15px;
+    }
+  }
+  link {
+    color: $blue-medium;
+  }
+}
