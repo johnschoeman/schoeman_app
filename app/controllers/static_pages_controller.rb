@@ -13,4 +13,10 @@ class StaticPagesController < ApplicationController
 
   def about
   end
+
+  def now
+  end
+
+  def engineering
+  end
 end

@@ -1,10 +1,12 @@
 Rails.application.routes.draw do
-  root                'static_pages#home'
-  get 'home'      =>  'static_pages#home'
-  get 'dance'     =>  'static_pages#dance'
-  get 'education' =>  'static_pages#education'
-  get 'contact'   =>  'static_pages#contact'
-  get 'about'     =>  'static_pages#about'
+  root                  'static_pages#home'
+  get 'home'        =>  'static_pages#home'
+  get 'now'         =>  'static_pages#now'
+  get 'engineering' =>  'static_pages#engineering'
+  get 'dance'       =>  'static_pages#dance'
+  get 'education'   =>  'static_pages#education'
+  get 'contact'     =>  'static_pages#contact'
+  get 'about'       =>  'static_pages#about'
 
   resources :microposts
   resources :users
