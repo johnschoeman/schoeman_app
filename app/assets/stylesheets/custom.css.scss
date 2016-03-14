@@ -4,6 +4,7 @@
 /* mixins, variables, etc. */
 
 $gray-medium-light: #eaeaea;
+$gray-dark: #505050;
 $blue-medium: #2070cc;
 
 
@@ -12,6 +13,18 @@ $blue-medium: #2070cc;
 body {
   padding-top: 60px;
   margin-top: 20px;
+  a {
+    color: $blue-medium;
+    decoration: none;
+    &:hover {
+      color: $blue-medium;
+      background-color: white;
+      decoration: underline;
+    }
+    &:visited {
+      color: $blue-medium;
+    }
+  }
 }
 
 section {
@@ -38,9 +51,10 @@ textarea {
 
 /* typography */
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, p, ul {
   line-height: 1;
   font-family: 'Century Gothic' sans-serif;
+  color: $gray-dark;
 }
 
 h1 {
@@ -56,13 +70,13 @@ h2 {
   margin-bottom: 30px;
   text-align: left;
   font-weight: normal;
-  color: gray;
+  /*color: gray*/
 }
 
 p {
   font-size: 1.1em;
   line-height: 1.7em;
-  color: gray;
+  /*color: gray;*/
 }
 
 /* header */
@@ -73,13 +87,13 @@ header {
   color: $blue-medium;
 }
 
-header a {
+#tab {
   color: $blue-medium;
   &:hover{
-    color: $blue-medium;
-    decoration: underline;
+    color: $gray-medium-light;
+    font-style: bold;
     background-color: $blue-medium;
-    border: 2px solid $blue-medium;
+    border: 1px solid $blue-medium;
     border-radius: 10px 10px 10px 10px;
   }
 }
@@ -94,10 +108,10 @@ header a {
   padding: 15px 4px;
   font-weight: medium;
   &:hover {
-    color: white;
+    color: $gray-medium-light;
     text-decoration: none;
     background-color: $blue-medium;
-    border: 2px solid $blue-medium;
+    border: 1px solid $blue-medium;
     border-radius: 10px 10px 10px 10px;
   }
 }
